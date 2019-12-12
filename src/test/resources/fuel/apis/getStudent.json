@@ -1,0 +1,21 @@
+{
+	"request":{
+	   "basePath":"{{api}}",
+	   "method":"GET",
+	   "queryParams":{
+	        "id":"{{id}}"
+	   }
+	 },
+	
+	"di":{
+ 	   "postStudent":[
+ 		   {
+ 			"paramName":"id",
+            "jsonPath":"id"
+ 		   }
+ 	    ]
+     },
+ 
+}
+	 
+	 

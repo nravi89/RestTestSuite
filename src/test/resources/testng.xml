@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGXMLTest Test Suite" guice-stage="DEVELOPMENT" parallel="classes">
+	<test thread-count="5" name="test_case_1_positive" verbose="2">
+	    <parameter name="jsonApi" value="D:\workspace\RestTestSuite\src\test\resources\fuel\test\test_case_1\test.json"/>
+	    <parameter name="inputCsv" value="D:\workspace\RestTestSuite\src\test\resources\fuel\test\test_case_1\positive.csv"/>
+		<classes>
+			<class name="com.fod89.AppTest" />
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="test_case_1_negative" verbose="2">
+	    <parameter name="jsonApi" value="D:\workspace\RestTestSuite\src\test\resources\fuel\test\test_case_1\test.json"/>
+	    <parameter name="inputCsv" value="D:\workspace\RestTestSuite\src\test\resources\fuel\test\test_case_1\negative.csv"/>
+		<classes>
+			<class name="com.fod89.AppTest" />
+		</classes>
+	</test>
+
+</suite>

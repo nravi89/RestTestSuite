@@ -1,0 +1,24 @@
+{
+"request":{
+	  "basePath":"{{api}}",
+	  "method":"POST",
+	  "body":{
+		   "name":"{{R_FIRST_NAME}} {{R_LAST_NAME}}",
+		   "age": "{{N2}}",
+		   "grade":"{{N1}}th"
+	  }
+ },
+
+ "di":{
+ 	"postStudent1":[
+ 		{
+ 			"paramName":"id",
+            "jsonPath":"id"
+ 		}
+ 	]
+ },
+ 
+"assertion":{
+	  "status":"200"
+ }
+}
